@@ -82,7 +82,7 @@
 .home__back {
     height: 622px;
 
-    background-image: url(/photo/img1.svg);
+    background-image: url(photo/img1.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -171,7 +171,7 @@
 }
 
 .inside__story__img {
-    background-image: url(/photo/story_img.svg);
+    background-image: url(photo/story_img.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -273,15 +273,15 @@
 }
 
 .card_img1 {
-    background-image: url(/photo/card1.svg);
+    background-image: url(photo/card1.svg);
 }
 
 .card_img2 {
-    background-image: url(/photo/card2.svg);
+    background-image: url(photo/card2.svg);
 }
 
 .card_img3 {
-    background-image: url(/photo/card3.svg);
+    background-image: url(photo/card3.svg);
 }
 
 @media screen and (max-width: 991px) {

@@ -1,0 +1,405 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- HEADER ---- */
+/* --- Navbar --- */
+
+/* Logo */
+
+.logo:hover {
+    color: black;
+}
+
+.link:hover {
+    color: black;
+}
+
+.logo {
+    color: black;
+
+    height: 110px;
+
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: color 0s ease-in;
+}
+
+/*Block of links (background not main block of links)*/
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Links of navbar (main block of links)*/
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*customize links*/
+.link {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-decoration: none;
+
+    color: black;
+
+    transition: color 0s ease-in;
+}
+
+@media screen and (max-width: 767px) {
+
+    .collapse {
+        justify-content: flex-start;
+    }
+
+    .link {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* ---- MAIN ---- */
+
+/** --- Home --- **/
+
+.home__back {
+    height: 622px;
+
+    background-image: url(photo/img1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home {
+    height: 622px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home__text {
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    color: white;
+}
+
+.under_line {
+    background: #817070;
+    width: 80px;
+    height: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .home__text {
+        font-size: 40px;
+    }
+
+    .under_line {
+        width: calc(40px / 0.75);
+        height: 8.5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home__text {
+        font-size: 30px;
+    }
+
+    .under_line {
+        width: calc(30px / 0.75);
+        height: 7px;
+    }
+}
+
+/** --- Story --- **/
+
+.story__back {
+    width: 100%;
+    background-color: white;
+    height: 600px;
+}
+
+@media screen and (max-width: 991px) {
+    .story__back {
+        height: 770px;
+    }
+}
+
+.story__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 170px;
+
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+
+    color: black;
+}
+
+.story__img {
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside__story__img {
+    background-image: url(photo/story_img.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 80%;
+    height: 80%;
+}
+
+.story__text {
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+
+
+    color: #000000;
+
+}
+
+@media screen and (max-width: 575px) {
+    .story__text {
+        font-size: 3.7vw;
+    }
+}
+
+/** --- Blog --- **/
+
+.blog__back {
+    background-color: #EFEFEF;
+
+    height: 700px;
+}
+
+.blog__title {
+    height: 170px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+
+    color: black;
+}
+
+.blog__item {
+    height: 475px;
+}
+
+.blog__card {
+    background-color: white;
+    height: 100%;
+}
+
+.card__title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: black;
+
+    padding: 20px 0 25px 25px;
+}
+
+.card__image {
+    width: 85%;
+    height: 50%;
+
+    margin: auto;
+}
+
+.card__text {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+
+    color: black;
+
+    padding: 10px 25px 15px;
+}
+
+.card_img1,
+.card_img2,
+.card_img3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card_img1 {
+    background-image: url(photo/card1.svg);
+}
+
+.card_img2 {
+    background-image: url(photo/card2.svg);
+}
+
+.card_img3 {
+    background-image: url(photo/card3.svg);
+}
+
+@media screen and (max-width: 991px) {
+    .blog__back {
+        height: 1700px;
+    }
+
+    .blog__item {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .card__text {
+        font-size: 14px;
+    }
+
+}
+
+/** --- Subscribe --- **/
+
+.sub__back {
+    background-color: #817070;
+    width: 100%;
+    height: 340px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sub {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__title {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+
+    color: white;
+}
+
+.sub__btn {
+    border: none;
+    background-color: white;
+    color: #817070;
+    width: 130px;
+    height: 45px;
+}
+
+.sub__input {
+    background-color: #817070;
+    border: 3px solid white;
+
+    color: white;
+
+    width: 200px;
+
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+.sub__input::placeholder {
+    color: white;
+    text-align: center;
+
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+:focus::placeholder{
+    opacity: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+/** ---- FOOTER ----- **/
+/* --- CopyRight --- */
+
+.copyright__back {
+    width: 100%;
+    height: 72px;
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright__back .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright__text {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: black;
+}
